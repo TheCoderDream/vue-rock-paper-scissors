@@ -1,0 +1,33 @@
+<template>
+  <div class="wins-losses">
+    <div class="wins">
+      <span class="number">
+        {{wins}}
+      </span>
+      <span class="text">
+        {{wins === 1 ? 'Win' : 'Wins'}}
+      </span>
+    </div>
+
+    <div class="losses">
+      <span class="number">
+        {{losses}}
+      </span>
+      <span class="text">
+        {{losses === 1 ? 'Loss' : 'Losses'}}
+      </span>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'Info',
+    props: ['wins', 'losses'],
+    data() {
+      return {
+
+      }
+    }
+  }
+</script>
